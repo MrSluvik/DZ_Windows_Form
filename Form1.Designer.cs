@@ -1,7 +1,7 @@
 ﻿
 namespace DZ_WF
 {
-    partial class Form1
+    partial class Static
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,10 +29,19 @@ namespace DZ_WF
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Static
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "Static";
+            this.Text = "Static";
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Mouse_click);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Mouse_Double_click);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
